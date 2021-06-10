@@ -3,7 +3,7 @@ package com.digitalhouse.Gerador.de.Diploma.V2;
 import com.digitalhouse.Gerador.de.Diploma.V2.detos.StudentDTO;
 import com.digitalhouse.Gerador.de.Diploma.V2.detos.StudentResponseDTO;
 import com.digitalhouse.Gerador.de.Diploma.V2.detos.SubjectTDO;
-import com.digitalhouse.Gerador.de.Diploma.V2.services.StudentService;
+import com.digitalhouse.Gerador.de.Diploma.V2.services.CertificateServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -14,9 +14,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 @SpringBootTest
-class GeradorDeDiplomaV2ApplicationTests {
+class CertificateServiceImplTest {
 
-	private StudentService studentService = new StudentService();
+	private CertificateServiceImpl studentService = new CertificateServiceImpl();
 
 	@Test
 	void bestCaseSubjectsAprove() {
@@ -57,40 +57,53 @@ class GeradorDeDiplomaV2ApplicationTests {
 
 
 	@Test
-	void bestCaseSubjectsAproveWithHonors() {
+	void bestComputerAverage() {
 		// Arrange
-		List<SubjectTDO> subjectTDOListTest = new ArrayList<>();
-		subjectTDOListTest.add(new SubjectTDO("Português", 10.0));
-		subjectTDOListTest.add(new SubjectTDO("Matemática", 9.0));
-		subjectTDOListTest.add(new SubjectTDO("Geográfia", 10.0));
-		subjectTDOListTest.add(new SubjectTDO("Física", 8.0));
-
-		StudentDTO studentDTOTest = new StudentDTO("Aluno Teste", subjectTDOListTest);
+		List<Double> notesTest = List.of(9.0, 9.0, 9.5);
 
 		// Act
-		StudentResponseDTO studentResponseDTO = studentService.analyzeNotes(studentDTOTest);
+		Double computerAverageResult = studentService.calculateAvarege(notesTest);
 
 		// Assert
-		assertEquals(studentResponseDTO.getMessage(), "Parabéns, 9.25, aprovado com louvor!");
+		assertEquals(computerAverageResult, 9.17);
+	}
+
+	void bedComputerAverage() {
+		// Arrange
+		List<Double> notesTest = List.of(9.0, 9.0, 9.5);
+
+		// Act
+		Double computerAverageResult = studentService.calculateAvarege(notesTest);
+
+		// Assert
+		assertEquals(computerAverageResult, 7.01);
+	}
+
+
+
+	@Test
+	void bestCaseWithHonors() {
+		// Arrange
+		Double averageTest = 9.5;
+
+		// Act
+		String withHonorsResult = studentService.withHonors(averageTest);
+
+		// Assert
+		assertEquals(withHonorsResult, "Parabéns, 9.5, aprovado com louvor!");
 	}
 
 
 	@Test
-	void bestCaseSubjectsAproveNormal() {
+	void badCaseWithHonors() {
 		// Arrange
-		List<SubjectTDO> subjectTDOListTest = new ArrayList<>();
-		subjectTDOListTest.add(new SubjectTDO("Português", 10.0));
-		subjectTDOListTest.add(new SubjectTDO("Matemática", 9.0));
-		subjectTDOListTest.add(new SubjectTDO("Geográfia", 8.0));
-		subjectTDOListTest.add(new SubjectTDO("Física", 8.0));
-
-		StudentDTO studentDTOTest = new StudentDTO("Aluno Teste", subjectTDOListTest);
+		Double averageTest = 9.5;
 
 		// Act
-		StudentResponseDTO studentResponseDTO = studentService.analyzeNotes(studentDTOTest);
+		String withHonorsResult = studentService.withHonors(averageTest);
 
 		// Assert
-		assertEquals(studentResponseDTO.getMessage(), "Sua média foi de 8.75!");
+		assertNotEquals(withHonorsResult, "Sua média foi de 8.75!");
 	}
 
 
