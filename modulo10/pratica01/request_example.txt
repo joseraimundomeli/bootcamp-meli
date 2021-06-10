@@ -1,0 +1,22 @@
+// Usege:
+// Method: POST
+// http://localhost:8080/analyzeNotes
+// Body JSON:
+
+{
+    "name" : "Jose Raimundo",
+    "subjects": [
+        {
+            "subject" : "Matematica",
+            "note" : 10
+        },
+        {
+            "subject" : "Fisica",
+            "note" : 7
+        },
+        {
+            "subject" : "Quimica",
+            "note" : 6
+        }
+    ]
+}
