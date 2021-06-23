@@ -36,25 +36,25 @@
 
 | Conteúdo | Descrição | Local |
 |--|--|--|
-| Aula 1 - exec. 1  | Exibir N números pares | N/A |
-| Aula 1 - exec. 2  | Exibir os N números múltiplos de M | N/A |
-| Aula 1 - exec. 3  | Verificar se N é primo | N/A |
-| Aula 1 - exec. 4  | Exibir N números primos | Em andamento |
-| Aula 1 - exec. 5  | Exibir os N primeiros números naturais que têm pelo menos de m dígitos de d, sendo n, m e d valores. | Em andamento |
-| Aula 1 - exec. 6  | Implementação Java do RadixSort | N/A |
-| Aula 2 - exec. 1  | Gerenciamento de turmas | N/A |
-| Aula 2 - exec. 2  | Conta corenete | N/A |
-| Aula 2 - exec. 3  | Criar uma classe Contador | N/A |
-| Aula 2 - exec. 4  | Implementar métodos estáticos  | N/A |
-| Aula 2 - exec. 5  | Criar uma classe Data | N/A |
-| Aula 2 - exec. 6  | Validador de senhas | N/A |
-| Aula 2 - exec. 7  | Gerenciamento de vendedores | N/A |
-| Aula 3 - exec. 1  | Pessoa com classes genéricas | N/A |
-| Aula 3 - exec. 2  | Algoritmos de ordenação | N/A |
-| Aula 3 - exec. 3  | Jogo de RPG | N/A |
-| Aula 4 - exec. 1  | SaveTheRopa | N/A |
-| Aula 4 - exec. 2  | DAKAR | N/A |
-| Aula 4 - exec. 3  | La Chiqui | N/A |
+| Aula 1 - exec. 1  | Exibir N números pares | [link no git](https://github.com/joseraimundomeli/bootcamp-meli/blob/master/modulo05-java-poo/aula03/exercicio01/src/main/java/exercicio01/exercicio01.java) |
+| Aula 1 - exec. 2  | Exibir os N números múltiplos de M | [link no git](https://github.com/joseraimundomeli/bootcamp-meli/blob/master/modulo05-java-poo/aula03/exercicio01/src/main/java/exercicio01/exercicio02.java) |
+| Aula 1 - exec. 3  | Verificar se N é primo | [link no git](https://github.com/joseraimundomeli/bootcamp-meli/blob/master/modulo05-java-poo/aula03/exercicio01/src/main/java/exercicio01/exercicio03.java) |
+| Aula 1 - exec. 4  | Exibir N números primos | [link no git](https://github.com/joseraimundomeli/bootcamp-meli/blob/master/modulo05-java-poo/aula03/exercicio01/src/main/java/exercicio01/exercicio04.java) |
+| Aula 1 - exec. 5  | Exibir os N primeiros números naturais que têm pelo menos de m dígitos de d, sendo n, m e d valores. | Em refatoramento |
+| Aula 1 - exec. 6  | Implementação Java do RadixSort | link no git |
+| Aula 2 - exec. 1  | Gerenciamento de turmas | link no git |
+| Aula 2 - exec. 2  | Conta corenete | link no git |
+| Aula 2 - exec. 3  | Criar uma classe Contador | link no git |
+| Aula 2 - exec. 4  | Implementar métodos estáticos  | link no git |
+| Aula 2 - exec. 5  | Criar uma classe Data | link no git |
+| Aula 2 - exec. 6  | Validador de senhas | link no git |
+| Aula 2 - exec. 7  | Gerenciamento de vendedores | link no git |
+| Aula 3 - exec. 1  | Pessoa com classes genéricas | [link no git](https://github.com/joseraimundomeli/bootcamp-meli/tree/master/modulo05-java-poo/aula05/exercicio01) |
+| Aula 3 - exec. 2  | Algoritmos de ordenação | [link no git](https://github.com/joseraimundomeli/bootcamp-meli/tree/master/modulo05-java-poo/aula05/exercicio02) |
+| Aula 3 - exec. 3  | Jogo de RPG | [link no git](https://github.com/joseraimundomeli/bootcamp-meli/tree/master/modulo05-java-poo/aula05/exercicio03) |
+| Aula 4 - exec. 1  | SaveTheRopa | [link no git](https://github.com/jramorim12/bootcamp-meli-grupo-12/tree/master/joseraimundo/modulo-05/aula06/SaveTheRopa) |
+| Aula 4 - exec. 2  | DAKAR | [link no git](https://github.com/jramorim12/bootcamp-meli-grupo-12/tree/master/joseraimundo/modulo-05/aula06/DAKAR)  |
+| Aula 4 - exec. 3  | La Chiqui | [link no git](https://github.com/jramorim12/bootcamp-meli-grupo-12/tree/master/joseraimundo/modulo-05/aula06/LaChiqui)  |
 
 
 #### Módulo 06 - Java Spring
